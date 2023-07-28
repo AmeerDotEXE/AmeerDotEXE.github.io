@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ameer.exe</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="projects.js"></script>
+	<script src="script.js" defer></script>
+	<style>
+		.site-loader {
+			position: fixed;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			max-height: 100%;
+			z-index: 10000;
+			background-color: #000;
+		}
+	</style>
+</head>
+<body>
+	<div class="site-loader"></div>
+	<div class="site-wrapper">
+		<div class="site-navbar">
+			<div class="navbar-left">
+				<a href="./" class="button" hidden>AmeerDotEXE</a>
+			</div>
+			<div class="navbar-center">
+				<a page="page-default" href="#home-page" class="sm-visible button selected">home</a>
+				<a page="page-projects" href="#projects-page" class="sm-visible button">projects</a>
+				<a page="page-default" href="#about-page" class="button">about</a>
+				<a page="page-default" href="#contact-page" class="button">contact</a>
+			</div>
+			<div class="navbar-right">
+				<!-- <button class="button">🌎</button> -->
+			</div>
+		</div>
+		<div class="site-content">
+			<div class="page show" id="page-default">
+				<div class="page-content projects-section" id="home-page">
+					<h2>Home</h2>
+					<ul id="large-projects-container">
+						<!-- <li class="large-project project">
+							<div class="icon-holder">
+								<img class="image" alt="A" src="">
+							</div>
+							<div class="image-holder">
+								<img class="image" alt="E" src="">
+							</div>
+							<div class="details">
+								<div class="name">Example</div>
+								<div class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos harum blanditiis, dolores temporibus enim ea, voluptates ipsa nemo libero, nobis odio aliquam numquam corporis exercitationem sunt ducimus consectetur odit deserunt?</div>
+								<div class="flex align-end">
+									<div class="tags">
+										<div class="tag">Beta</div>
+										<div class="tag">Disconitnued</div>
+										<div class="tag">Paid</div>
+									</div>
+									<div class="buttons">
+										<button class="button">Visit</button>
+									</div>
+								</div>
+							</div>
+						</li> -->
+					</ul>
+					<ul id="mini-projects-container">
+						<!-- <li class="mini-project project">
+							<div class="icon-holder">
+								<img class="image" alt="A" src="">
+							</div>
+							<div class="details">
+								<div class="name">Example</div>
+								<div>App</div>
+							</div>
+						</li> -->
+						<li class="mini-project project" onclick="document.querySelector('.site-navbar .navbar-center a[page=&quot;page-projects&quot;]').click();">
+							<div class="icon-holder">
+								<img class="image" alt="+" src="">
+							</div>
+							<div class="details">
+								<div class="name">View All</div>
+								<div>Go to projects page</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="page-content" hidden>
+					<h1>Hello 👋</h1>
+					<h2>its me a <span class="strike">human</span> Ameer</h2>
+					<h4>for short: dev, content creator, happy :&gt;</h4>
+					<button class="learn-more">learn more</button>
+				</div>
+				<div class="page-content" id="about-page">
+					<h2>About</h2>
+					<div class="flex">
+						<div class="about-image-holder"></div>
+						<div class="flex column full-width">
+							<div class="code-block">
+								<div style="padding-left: calc(0 * var(--tab-length));"><span class="func">function</span> printAbout<span class="func">(</span>button<span class="func">)</span> <span class="curly-parants">{</span></div>
+								<div style="padding-left: calc(1 * var(--tab-length));"><span class="var">const</span> username = <span class="string">"Ameer Al-Saedi"</span><span class="curly-parants">;</span></div>
+								<div style="padding-left: calc(1 * var(--tab-length));"><span class="var">let</span> languages = <span class="parants">[</span> <span class="string">"English"</span><span class="curly-parants">,</span> <span class="string">"Turkish"</span><span class="curly-parants">,</span> <span class="string">"Arabic"</span> <span class="parants">]</span><span class="curly-parants">;</span></div>
+								<div style="padding-left: calc(1 * var(--tab-length));"><span class="var">let</span> codingLanguages = <span class="parants">[</span></div>
+								<div style="padding-left: calc(2 * var(--tab-length));"><span class="string">"HTML/CSS/JS"</span><span class="curly-parants">,</span></div>
+								<div style="padding-left: calc(2 * var(--tab-length));"><span class="string">"Node.js"</span><span class="curly-parants">,</span></div>
+								<div style="padding-left: calc(2 * var(--tab-length));"><span class="string">"Rust"</span><span class="curly-parants">,</span></div>
+								<div style="padding-left: calc(2 * var(--tab-length));"><span class="string">"C#"</span><span class="curly-parants">,</span></div>
+								<div style="padding-left: calc(1 * var(--tab-length));"><span class="parants">]</span><span class="curly-parants">;</span></div>
+								<div style="padding-left: calc(1 * var(--tab-length));"><br></div>
+								<div style="padding-left: calc(1 * var(--tab-length));">codingLanguages.<span class="func">push(</span><span class="string">"Python"</span><span class="func">)</span><span class="curly-parants">;</span></div>
+								<div style="padding-left: calc(1 * var(--tab-length));"><br></div>
+								<div style="padding-left: calc(1 * var(--tab-length));"><span class="var">const</span> <span class="curly-parants">{</span> technologies <span class="curly-parants">}</span> = window.<span class="func">getTech(</span>languages<span class="parants">[</span><span class="string">0</span><span class="parants">]</span><span class="func">)</span><span class="curly-parants">;</span></div>
+								<div style="padding-left: calc(1 * var(--tab-length));">technologies.<span class="func">push(</span><span class="string">"Tauri"</span><span class="func">)</span><span class="curly-parants">;</span></div>
+								<div style="padding-left: calc(1 * var(--tab-length));"><br></div>
+								<div style="padding-left: calc(1 * var(--tab-length));">button.parentElement.<span class="func">append(</span>technologies.<span class="func">join(</span><span class="string">", "</span><span class="func">))</span><span class="curly-parants">;</span></div>
+								<div style="padding-left: calc(1 * var(--tab-length));">button.<span class="func">remove()</span><span class="curly-parants">;</span></div>
+								<div style="padding-left: calc(1 * var(--tab-length));"><br></div>
+								<div style="padding-left: calc(1 * var(--tab-length));"><span class="parameter">return</span> <span class="curly-parants">{</span> username, state: <span class="string">"still learning more and more"</span> <span class="curly-parants">}</span><span class="curly-parants">;</span></div>
+								<div style="padding-left: calc(0 * var(--tab-length));"><span class="curly-parants">}</span></div>
+								<div style="padding-left: calc(0 * var(--tab-length));"><br></div>
+								<div style="padding-left: calc(0 * var(--tab-length));"><span class="curly-parants">&lt;</span><span class="func">button</span> onclick=<span class="string">"printAbout(this);"</span><span class="curly-parants">&gt;</span>Execute<span class="curly-parants">&lt;</span><span class="func">/button</span><span class="curly-parants">&gt;</span></div>
+							</div>
+							<button class="code-execute">Execute</button>
+						</div>
+					</div>
+				</div>
+				<div class="page-content" id="contact-page">
+					<h2>Contact</h2>
+					<div class="flex" style="flex-wrap: wrap;justify-content: center;align-items: flex-start;gap: 5rem;padding: 5rem 0;">
+						<div style="display: grid;align-items: center;gap: 1rem;grid-template-columns: auto auto 1fr;">
+							<div class="contact-icon">
+								<img class="image" src="https://lh3.googleusercontent.com/0rpHlrX8IG77awQMuUZpQ0zGWT7HRYtpncsuRnFo6V3c8Lh2hPjXnEuhDDd-OsLz1vua4ld2rlUYFAaBYk-rZCODmi2eJlwUEVsZgg" alt="M">
+							</div>
+							<span>Gmail:</span>
+							<a id="my-mail">Click to view</a>
+
+							<div class="contact-icon">
+								<img class="image" src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6ca814282eca7172c6_icon_clyde_white_RGB.svg" alt="D">
+							</div>
+							<span>Discord:</span>
+							<a href="https://discord.com/users/298886885210587136">ameeryt</a>
+
+							<div class="contact-icon">
+								<img class="image" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="G">
+							</div>
+							<span>GitHub:</span>
+							<a href="https://github.com/AmeerDotEXE">AmeerDotEXE</a>
+						</div>
+						<div style="display: grid;align-items: center;gap: 1rem;grid-template-columns: auto auto 1fr;">
+							<div class="contact-icon">
+								<img class="image" src="https://lh3.googleusercontent.com/3_OFn2skqHXk-UQ-9RUdNrDl_HQJrMCxks5teQcUrF_bOSeDG1hD8j83FeD31W8hASZCvubzsGfumuJq8kvvSAq03wY87RZ7Otx_DF4" alt="Y">
+							</div>
+							<span>Youtube:</span>
+							<a href="https://www.youtube.com/c/AmeerYT">Ameer!</a>
+
+							<div class="contact-icon">
+								<img class="image" src="" alt="💲">
+							</div>
+							<span>Bank Details:</span>
+							<span style="position: relative;padding: 1rem 0;" onpointermove="this.style.bottom = (parseInt(this.style.bottom || '10') + 20) + 'px';">Click to view</span>
+						</div>
+						<!-- <ul>
+							<li>Email: ameerkhalid193@gmail.com</li>
+							<li>Discord: ameeryt</li>
+							<li>GitHub: AmeerDotEXE</li>
+						</ul>
+						<ul>
+							<li>Youtube: Ameer!</li>
+							<li>Bank Details: <button>Click to view</button></li>
+						</ul> -->
+					</div>
+				</div>
+			</div>
+			<div class="page" id="page-projects">
+				<div class="page-content" hidden>
+					<h1>Hello 👋</h1>
+					<h2>its me a <span class="strike">human</span> Ameer</h2>
+					<h4>for short: dev, content creator, happy :&gt;</h4>
+					<button class="learn-more">learn more</button>
+				</div>
+				<div class="page-content" id="projects-page">
+					<h2>All Projects</h2>
+					<ul id="medium-projects-container">
+						<!-- <li class="medium-project project">
+							<div class="image-holder">
+								<img class="image" alt="E" src="">
+							</div>
+							<div class="details">
+								<div class="name">Example</div>
+								<div class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos harum blanditiis, dolores temporibus enim ea, voluptates ipsa nemo libero, nobis odio aliquam numquam corporis exercitationem sunt ducimus consectetur odit deserunt?</div>
+								<div class="tags">
+									<div class="tag">Beta</div>
+									<div class="tag">Disconitnued</div>
+									<div class="tag">Paid</div>
+								</div>
+								<div class="buttons">
+									<button class="button">Visit</button>
+								</div>
+							</div>
+						</li> -->
+					</ul>
+				</div>
+			</div>
+			<div class="popup" id="project-popup">
+				<div class="popup-content">
+					<div class="flex" id="project-details">
+						<div class="popup-buttons">
+							<button class="button">🔗</button>
+							<button class="button" onclick="document.getElementById('project-popup').classList.remove('show');">❌</button>
+						</div>
+						<div class="icon-bar">
+							<div class="icon-holder">
+								<img class="image" alt="A" src="">
+							</div>
+							<ul class="image-list">
+								<li>
+									<div class="image-holder">
+										<img class="image" alt="E" src="">
+									</div>
+								</li>
+								<li>
+									<div class="image-holder">
+										<img class="image" alt="E" src="">
+									</div>
+								</li>
+								<li>
+									<div class="image-holder">
+										<img class="image" alt="E" src="">
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="details-bar">
+							<div class="info">
+								<div class="flex">
+									<div class="icon-holder avatar-size">
+										<img class="image" alt="A" src="">
+									</div>
+									<div class="avatar-details">
+										<div class="name">Example</div>
+										<div class="project-type">Example Page</div>
+									</div>
+								</div>
+								<div class="divider"></div>
+								<div class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos harum blanditiis?</div>
+								<div class="tags">
+									<div class="tag">Beta</div>
+									<div class="tag">Disconitnued</div>
+									<div class="tag">Paid</div>
+								</div>
+								<div class="divider"></div>
+							</div>
+							<div class="details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque reprehenderit distinctio et amet dolore dolorem eaque perferendis dolores neque, tempora rem ullam impedit maiores facilis consequuntur sit modi omnis eveniet! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum ipsa aliquam exercitationem, asperiores quibusdam dolorem dicta atque tempora ipsam eius eos quos, quasi velit eligendi totam vitae quisquam error delectus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus at fugit quis ab animi reiciendis, placeat excepturi expedita repellendus nemo et id odio asperiores beatae enim minima vel, magnam earum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque reprehenderit distinctio et amet dolore dolorem eaque perferendis dolores neque, tempora rem ullam impedit maiores facilis consequuntur sit modi omnis eveniet! Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
+							<div class="flex justify-end">
+								<div class="buttons">
+									<button class="button">Visit</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="site-footer">
+			<div class="defaultText-color">Copyright © AmeerDotEXE</div>
+		</div>
+	</div>
+</body>
+</html>
