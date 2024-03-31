@@ -235,6 +235,22 @@ html, body {
 	padding: 1rem 3rem;
 	background-color: hsl(var(--site-hue) 0% 25%);
 	text-align: center;
+	position: relative;
+}
+#terminal-btn {
+	position: fixed;
+	top: .5rem;
+	right: 1.5rem;
+	width: 2rem;
+	height: 2rem;
+	display: flex;
+	border-radius: 8px;
+	background-color: hsl(var(--site-hue) 0% 6%);
+	color: hsl(var(--site-hue) 0% 25%);
+	border: 1px solid hsl(var(--site-hue) 0% 25%);
+	cursor: pointer;
+    align-items: center;
+    justify-content: center;
 }
 
 

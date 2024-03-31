@@ -1,0 +1,28 @@
+:root {
+	--text-color: rgb(0,250,0);
+	--text-dim: rgb(0,180,0);
+
+	--background-tertiary: rgb(16,16,16);
+
+	/* --font-primary: ubuntu mono; */
+	/* --font-secondary: IBM Plex Mono; */
+	--font-primary: 'Courier New', Courier, monospace;
+	--font-secondary: 'Courier New', Courier, monospace;
+}
+
+body {
+	margin: 0;
+
+	height: 100%;
+	font: var(--font-primary);
+	color: var(--text-color);
+	background: var(--background-tertiary);
+}
+
+#terminal {
+	height: 100%;
+
+	--background: var(--background-tertiary);
+	--color: var(--text-color);
+	--size: 1.5;
+}
