@@ -8,12 +8,14 @@ window.projectList = [
 		projectType: "Program",
 		images: [
 			{
-				link: "https://media.discordapp.net/attachments/1119951360293613638/1119951885932179537/image.png",
+				link: "/assets/projects/presencex-preview.png",
+				width: 794,
+				height: 675,
 				text: "PresenceX",
 			},
 		],
 		icon: {
-			link: "https://cdn.discordapp.com/attachments/1119951360293613638/1119951360503332925/app-icon.png",
+			link: "/assets/projects/presencex-icon.png",
 			text: "P",
 		},
 		name: "PresenceX",
@@ -34,11 +36,13 @@ window.projectList = [
 		images: [
 			{
 				link: "https://lh3.googleusercontent.com/ihBd4W4EzcUZ7X8nUHONK8I8c2uY1YKunm1NxM4Q8c-6e_pK0BDJQup_jPoHjS2ms8bjTb-pp6hOeqxfEEK7-J4qBw=w640-h400-e365-rj-sc0x00ffffff",
+				width: 640,
+				height: 400,
 				text: "Roblokis",
 			},
 		],
 		icon: {
-			link: "https://media.discordapp.net/attachments/1114223568599924806/1114223568725749870/8WhzqMb-oCfDpx5tkeZTP4fEyC0_HRVdTXPAw0wUYdVwfFmfr0oMR9AfGkvkWEuWz_dArEcnNHU9dN3KfqFDdZvPw128-h128-e365-rj-sc0x00ffffff.png",
+			link: "/assets/projects/roblokis-icon.png",
 			text: "Rkis",
 		},
 		name: "Roblokis",
@@ -124,7 +128,7 @@ window.projectList = [
 		projectType: "Program",
 		images: [],
 		icon: {
-			link: "https://media.discordapp.net/attachments/1114227227257737329/1114227227509407985/discord-avatar-512-0E8D9.png",
+			link: "/assets/projects/dir-icon.png",
 			text: "DIR",
 		},
 		name: "Discord is Rich",

@@ -2,8 +2,14 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Ameer.exe</title>
+	<meta name="viewport" content="width=device-width, initial-scale=0.75">
+	<title>AmeerDotEXE</title>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+
 	<link rel="stylesheet" href="style.css">
 	<script src="projects.js"></script>
 	<script src="script.js" defer></script>
@@ -77,6 +83,7 @@
 						</li> -->
 						<li class="mini-project project" onclick="document.querySelector('.site-navbar .navbar-center a[page=&quot;page-projects&quot;]').click();">
 							<div class="icon-holder">
+								<div class="image-placeholder">+</div>
 								<img class="image" alt="+" src="">
 							</div>
 							<div class="details">
@@ -126,8 +133,8 @@
 					</div>
 				</div>
 				<div class="page-content" id="contact-page">
-					<h2>Contact</h2>
-					<div class="flex" style="flex-wrap: wrap;justify-content: center;align-items: flex-start;gap: 5rem;padding: 5rem 0;">
+					<h2 style="margin-left: 0;text-align: center;">Contact</h2>
+					<!-- <div class="flex" style="flex-wrap: wrap;justify-content: center;align-items: flex-start;gap: 5rem;padding: 5rem 0;">
 						<div style="display: grid;align-items: center;gap: 1rem;grid-template-columns: auto auto 1fr;">
 							<div class="contact-icon">
 								<img class="image" src="https://lh3.googleusercontent.com/0rpHlrX8IG77awQMuUZpQ0zGWT7HRYtpncsuRnFo6V3c8Lh2hPjXnEuhDDd-OsLz1vua4ld2rlUYFAaBYk-rZCODmi2eJlwUEVsZgg" alt="M">
@@ -142,7 +149,7 @@
 							<a href="https://discord.com/users/298886885210587136">ameeryt</a>
 
 							<div class="contact-icon">
-								<img class="image" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="G">
+								<img class="image" src="https://github.githubassets.com/favicons/favicon-dark.svg" alt="G">
 							</div>
 							<span>GitHub:</span>
 							<a href="https://github.com/AmeerDotEXE">AmeerDotEXE</a>
@@ -155,32 +162,62 @@
 							<a href="https://www.youtube.com/c/AmeerYT">Ameer!</a>
 
 							<div class="contact-icon">
-								<img class="image" src="" alt="💲">
+								<div class="image-placeholder">💲</div>
 							</div>
 							<span>Bank Details:</span>
 							<span style="position: relative;padding: 1rem 0;" onpointermove="this.style.bottom = (parseInt(this.style.bottom || '10') + 20) + 'px';">Click to view</span>
 						</div>
-						<!-- <ul>
-							<li>Email: ameerkhalid193@gmail.com</li>
-							<li>Discord: ameeryt</li>
-							<li>GitHub: AmeerDotEXE</li>
-						</ul>
-						<ul>
-							<li>Youtube: Ameer!</li>
-							<li>Bank Details: <button>Click to view</button></li>
-						</ul> -->
+					</div> -->
+					<div class="flex" style="flex-wrap: wrap;justify-content: center;align-items: flex-start;gap: 2rem;padding: 1rem 0;">
+						<div style="display: flex;gap: 1rem;flex-direction: column;">
+							<div class="contact-card">
+								<div class="contact-icon">
+									<img class="image" src="https://lh3.googleusercontent.com/0rpHlrX8IG77awQMuUZpQ0zGWT7HRYtpncsuRnFo6V3c8Lh2hPjXnEuhDDd-OsLz1vua4ld2rlUYFAaBYk-rZCODmi2eJlwUEVsZgg" alt="M">
+								</div>
+								<span>Gmail:</span>
+								<a id="my-mail">Click to view</a>
+							</div>
+
+							<div class="contact-card">
+								<div class="contact-icon">
+									<img class="image" src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6ca814282eca7172c6_icon_clyde_white_RGB.svg" alt="D">
+								</div>
+								<span>Discord:</span>
+								<a href="https://discord.com/users/298886885210587136">ameeryt</a>
+							</div>
+
+							<div class="contact-card">
+								<div class="contact-icon">
+									<img class="image" src="https://github.githubassets.com/favicons/favicon-dark.svg" alt="G">
+								</div>
+								<span>GitHub:</span>
+								<a href="https://github.com/AmeerDotEXE">AmeerDotEXE</a>
+							</div>
+						</div>
+						<div style="display: flex;gap: 1rem;flex-direction: column;">
+							
+							<div class="contact-card">
+								<div class="contact-icon">
+									<img class="image" src="https://lh3.googleusercontent.com/3_OFn2skqHXk-UQ-9RUdNrDl_HQJrMCxks5teQcUrF_bOSeDG1hD8j83FeD31W8hASZCvubzsGfumuJq8kvvSAq03wY87RZ7Otx_DF4" alt="Y">
+								</div>
+								<span>Youtube:</span>
+								<a href="https://www.youtube.com/c/AmeerYT">Ameer!</a>
+							</div>
+
+							<div class="contact-card">
+								<div class="contact-icon">
+									<div class="image-placeholder">💲</div>
+								</div>
+								<span>Bank Details:</span>
+								<span style="position: relative;padding: 1rem 0;" onpointermove="this.style.bottom = (parseInt(this.style.bottom || '10') + 20) + 'px';">Click to view</span>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="page" id="page-projects">
-				<div class="page-content" hidden>
-					<h1>Hello 👋</h1>
-					<h2>its me a <span class="strike">human</span> Ameer</h2>
-					<h4>for short: dev, content creator, happy :&gt;</h4>
-					<button class="learn-more">learn more</button>
-				</div>
 				<div class="page-content" id="projects-page">
-					<h2>All Projects</h2>
+					<h2 style="text-align: center;margin-bottom: 1rem;">All Projects</h2>
 					<ul id="medium-projects-container">
 						<!-- <li class="medium-project project">
 							<div class="image-holder">
@@ -207,7 +244,7 @@
 					<div class="flex" id="project-details">
 						<div class="popup-buttons">
 							<button class="button">🔗</button>
-							<button class="button" onclick="document.getElementById('project-popup').classList.remove('show');">❌</button>
+							<button class="button" onclick="document.getElementById('project-popup').classList.remove('show');">X</button>
 						</div>
 						<div class="icon-bar">
 							<div class="icon-holder">
