@@ -463,7 +463,7 @@ ul#medium-projects-container {
 ul#mini-projects-container {
 	display: flex;
 	flex-wrap: wrap;
-	max-height: 200px;
+	max-height: calc(2 * 7rem);
 	overflow: hidden;
 	padding: 1rem;
 	gap: 1rem;

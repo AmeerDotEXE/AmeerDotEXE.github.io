@@ -293,6 +293,9 @@ const projectManager = ((projects = []) => {
 	};
 
 	if (projects == null || projects.length == 0) return;
+	projectContainers["mini"].querySelectorAll(".project").forEach((x, i) => {if (i != 0) x.remove();})
+	projectContainers["medium"].innerHTML = "";
+	projectContainers["large"].innerHTML = "";
 	for (let i = 0; i < projects.length; i++) {
 		const project = projects[i];
 		let projectElement = createProjectElement(project);
