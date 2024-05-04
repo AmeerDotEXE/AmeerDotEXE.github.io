@@ -233,7 +233,7 @@ html, body {
 .site-footer {
 	height: 2rem;
 	padding: 1rem 3rem;
-	background-color: hsl(var(--site-hue) 0% 25%);
+	background: rgba(128, 128, 128, 0.2);
 	text-align: center;
 	position: relative;
 }
@@ -871,4 +871,14 @@ a {
 		width: 100%;
 		height: auto;
 	}
+}
+
+::-webkit-scrollbar{
+	width: 10px;
+	height: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+	background: rgba(0,0,0,0.5);
+	border-radius: 10px;
 }
