@@ -480,7 +480,7 @@ ul#mini-projects-container {
 	display: flex;
 	flex-wrap: wrap;
 	max-height: calc(2 * 7rem);
-	overflow: hidden;
+	/* overflow: hidden; */
 	padding: 1rem;
 	gap: 1rem;
 	box-sizing: border-box;
@@ -493,7 +493,7 @@ ul#mini-projects-container {
 	margin: 0;
 	max-width: 300px;
 	height: 6rem !important;
-	border-radius: 8px;
+	border-radius: calc(8px + 0.5rem);
 	padding: 0.5rem;
 	background-color: hsl(var(--site-hue) 25% 25% / 0.3);
 	flex-direction: row;
